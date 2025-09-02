@@ -1,0 +1,8 @@
+Si introducimos el 5, se mostraria lo siguiente: 
+
+Introduce un numero entero: 5
+Doble de 5 -> 10
+Cuadrado de 5 -> 25
+
+Hay un error y es que nunca se cierra el Scanner sc, al final del programa habría que escribir:
+sc.close();
