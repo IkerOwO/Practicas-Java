@@ -1,0 +1,29 @@
+Ejercicio Competición 
+ 
+Se pretende realizar un programa para gestionar la lista de participaciones en una competición 
+de salto de longitud. Diseñar el programa que muestre las siguientes 
+ 
+Opciones: 
+1- Inscribir un participante. 
+2- Borrar un participante. 
+3- Mostrar listado de participantes. 
+4- Mostrar listado de participantes ordenados por dorsal. 
+5- Finalizar el programa. 
+ 
+- Si se selecciona 1, se introducirán los datos de uno de los participantes: dorsal, nombre y 
+posición.  
+- Si se elige la opción 2, se debe borrar un participante con un dorsal determinado. 
+- En la opción 3 se mostrará un listado de todos los participantes  
+- La opción 4 mostrará un listado de todos los participantes ordenados por el número de 
+dorsal. 
+- Tras procesar cada opción, se debe mostrar de nuevo el menú inicial, hasta que se 
+seleccione la opción 5, que terminará el programa. 
+ 
+Para resolver el ejercicio se deberán desarrollar dos clases: 
+1. La clase Jugador 
+ 
+Donde se modelan los objetos jugadores, los cuales vienen descritos por un número de dorsal, 
+un nombre y una posición.  
+ 
+2. La clase Competición 
+Será la clase que contiene la función main
