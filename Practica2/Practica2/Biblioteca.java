@@ -1,0 +1,37 @@
+package Practica2;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Biblioteca {
+    public List<Libro> libros;
+
+     public Biblioteca() {
+        this.libros = new ArrayList<>();
+    }
+
+    public void agregarLibro(Libro libro) {
+        libros.add(libro);
+    }
+
+    public void eliminarLibro(String isbn) {
+        try {
+            for (Libro libro : libros) {
+                if (libro.getLsbn().equals(isbn)) {
+                    libros.remove(libro);
+                    System.out.println("El libro con isbn '" + isbn + "' se ha eliminado de la biblioteca");
+                    return;
+                }
+            }
+            throw new LibroNoEncontradoException(isbn);
+
+        } catch (LibroNoEncontradoException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void mostrarBiblioteca() {
+        for (Libro l : libros) {
+            System.out.println(l);
+        }
+    }
+}
